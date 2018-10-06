@@ -17,13 +17,17 @@ import {
   Right,
   Card,
   CardItem,
-  Thumbnail
+  Thumbnail,
+  Footer,
+  FooterTab
 } from "native-base";
+import { View, } from 'react-native';
 import { Grid, Row } from "react-native-easy-grid";
 
 import { setIndex } from "../../actions/list";
 import { openDrawer } from "../../actions/drawer";
 import styles from "./styles";
+import Timer from '../timer';
 
 class Home extends Component {
   static navigationOptions = {
@@ -74,8 +78,11 @@ class Home extends Component {
             </Button>
           </Right>
         </Header>
+
+        {/* <Timer/> */}
+
         <Content padder>
-          {/* <Grid style={styles.mt}>
+        {/* <Grid style={styles.mt}>
             {this.props.list.map((item, i) => (
               <Row key={i}>
                 <TouchableOpacity
@@ -92,7 +99,8 @@ class Home extends Component {
           </Grid> */}
 
 
-          <Card>
+
+        <Card>
             <CardItem button>
               <Left>
                 <Thumbnail source={{ uri: "https://www.mills.edu/uniquely-mills/students-faculty/student-profiles/images/student-profile-gabriela-mills-college.jpg" }} />
