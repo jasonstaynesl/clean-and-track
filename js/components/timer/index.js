@@ -1,30 +1,13 @@
 import React, { Component } from "react";
-import { TouchableOpacity,View } from "react-native";
-import {
-    Container,
-    Header,
-    Title,
-    Content,
-    Text,
-    Button,
-    Icon,
-    Left,
-    Body,
-    Right,
-    Card,
-    CardItem,
-    Thumbnail,
-    Footer,
-    FooterTab
-} from "native-base";
-import styles from "./style";
+import { View } from "react-native";
+import { Text, Icon } from "native-base";
 
 class Timer extends Component {
     state = {}
     render() {
         return (
-            <View style={{flex:1}}>
-                <View style={{ backgroundColor: '#06BEB6', padding: 20 }}>
+            <View style={{ flex: 1 }}>
+                <View style={{ backgroundColor: '#06BEB6', padding: 20, borderBottomWidth: .5, borderColor: '#fff' }}>
                     <View style={{ flexDirection: 'row' }}>
                         <Icon active name="ios-home" style={{ color: 'white', fontSize: 20, width: 20 }} />
                         <Text style={{ marginLeft: 10, color: 'white', fontSize: 16, fontWeight: 'bold' }}>Abans pvt</Text>
@@ -36,9 +19,27 @@ class Timer extends Component {
                 </View>
 
                 <View style={{ flex: 1, flexDirection: 'column' }}>
-                    <View style={{ flex: 1, backgroundColor: '#06BEB6', justifyContent: 'center', alignItems: 'center' }}>
-                        <Text style={{ color: 'white', fontSize: 60, fontWeight: 'bold' }}>00 : 00 : 00</Text>
+                    <View style={{ flex: 1, flexDirection: 'row', backgroundColor: '#06BEB6', justifyContent: 'center', alignItems: 'center' }}>
+                        <View style={{ backgroundColor: '#eee', padding: 10, marginRight: 5, borderColor: '#05aba4', borderWidth: 1 }}>
+                            <Text style={{ color: '#06BEB6', fontSize: 50 }}>00</Text>
+                        </View>
+                        <View style={{ backgroundColor: '#eee', padding: 10, marginRight: 5, borderColor: '#05aba4', borderWidth: 1 }}>
+                            <Text style={{ color: '#06BEB6', fontSize: 50, }}>00</Text>
+                        </View>
+                        <View style={{ backgroundColor: '#eee', padding: 10, borderColor: '#05aba4', borderWidth: 1 }}>
+                            <Text style={{ color: '#06BEB6', fontSize: 50 }}>00</Text>
+                        </View>
                     </View>
+                    <View style={{ flexDirection: 'row', backgroundColor: '#eeeeee' }}>
+                        <View style={{ flex: 0.5, backgroundColor: '#1f25321f', height: 60, justifyContent: 'center', borderColor: '#ccc', borderWidth: 1 }}>
+                            <Text style={{ marginLeft: 10, color: '#0698be', fontSize: 16, fontWeight: 'bold', alignSelf: 'center' }}>Break</Text>
+                        </View>
+                        <View style={{ flex: 0.5, backgroundColor: '#06b7be', height: 60, justifyContent: 'center', borderColor: '#05aba4', borderWidth: 1 }}>
+                            <Text style={{ marginLeft: 10, color: '#fff', fontSize: 16, fontWeight: 'bold', alignSelf: 'center' }}>Check-Out</Text>
+                        </View>
+                    </View>
+
+
 
                     <View style={{ flex: 1, backgroundColor: '#1f253203' }}>
                         <View style={{ borderBottomWidth: 1, borderColor: '#ccc', padding: 20, backgroundColor: '#1f253203' }}>
@@ -65,15 +66,6 @@ class Timer extends Component {
                                 </View>
                             </View>
                         </View>
-                    </View>
-                </View>
-
-                <View style={{ flexDirection: 'row', backgroundColor: '#eeeeee', position: 'absolute', left: 0, right: 0, bottom: 0 }}>
-                    <View style={{ flex: 0.5, backgroundColor: '#1f25321f', height: 50, justifyContent: 'center' }}>
-                        <Text style={{ marginLeft: 10, color: '#06BEB6', fontSize: 16, fontWeight: 'bold', alignSelf: 'center' }}>Break</Text>
-                    </View>
-                    <View style={{ flex: 0.5, backgroundColor: '#06BEB6', height: 50, justifyContent: 'center' }}>
-                        <Text style={{ marginLeft: 10, color: '#fff', fontSize: 16, fontWeight: 'bold', alignSelf: 'center' }}>Check-Out</Text>
                     </View>
                 </View>
             </View>

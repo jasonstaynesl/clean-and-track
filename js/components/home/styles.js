@@ -20,6 +20,8 @@ export default {
   },
   header:{
     backgroundColor:'#06BEB6',
+    borderBottomWidth:.5,
+    borderBottomColor:'#fff'
   },
   hicon:{
     color:'#fff',

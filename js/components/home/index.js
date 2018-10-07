@@ -82,7 +82,7 @@ class Home extends Component {
         {/* <Timer/> */}
 
         <Content padder>
-        {/* <Grid style={styles.mt}>
+          {/* <Grid style={styles.mt}>
             {this.props.list.map((item, i) => (
               <Row key={i}>
                 <TouchableOpacity
@@ -100,13 +100,13 @@ class Home extends Component {
 
 
 
-        <Card>
+          <Card>
             <CardItem button>
               <Left>
                 <Thumbnail source={{ uri: "https://www.mills.edu/uniquely-mills/students-faculty/student-profiles/images/student-profile-gabriela-mills-college.jpg" }} />
                 <Body>
-                  <Text>NativeBase</Text>
-                  <Text note>GeekyAnts</Text>
+                  <Text>Abans pvt</Text>
+                  <Text note>236, Almeda Road Battaramulla SriLanka</Text>
                 </Body>
               </Left>
             </CardItem>
@@ -116,8 +116,8 @@ class Home extends Component {
               <Left>
                 <Thumbnail source={{ uri: "https://www.mills.edu/uniquely-mills/students-faculty/student-profiles/images/student-profile-gabriela-mills-college.jpg" }} />
                 <Body>
-                  <Text>NativeBase</Text>
-                  <Text note>GeekyAnts</Text>
+                  <Text>Abans pvt</Text>
+                  <Text note>236, Almeda Road Battaramulla SriLanka</Text>
                 </Body>
               </Left>
             </CardItem>
@@ -127,8 +127,8 @@ class Home extends Component {
               <Left>
                 <Thumbnail source={{ uri: "https://www.mills.edu/uniquely-mills/students-faculty/student-profiles/images/student-profile-gabriela-mills-college.jpg" }} />
                 <Body>
-                  <Text>NativeBase</Text>
-                  <Text note>GeekyAnts</Text>
+                  <Text>Abans pvt</Text>
+                  <Text note>236, Almeda Road Battaramulla SriLanka</Text>
                 </Body>
               </Left>
             </CardItem>
@@ -138,8 +138,8 @@ class Home extends Component {
               <Left>
                 <Thumbnail source={{ uri: "https://www.mills.edu/uniquely-mills/students-faculty/student-profiles/images/student-profile-gabriela-mills-college.jpg" }} />
                 <Body>
-                  <Text>NativeBase</Text>
-                  <Text note>GeekyAnts</Text>
+                  <Text>Abans pvt</Text>
+                  <Text note>236, Almeda Road Battaramulla SriLanka</Text>
                 </Body>
               </Left>
             </CardItem>
